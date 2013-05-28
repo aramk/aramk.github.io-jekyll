@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="c833ea98-ece4-4f46-a6ab-a86313dae954" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/main.css" afterPath="$PROJECT_DIR$/css/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_layouts/post.html" afterPath="$PROJECT_DIR$/_layouts/post.html" />
     </list>
     <ignored path="aramk.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -11,7 +10,7 @@
     <file path="/bootstrap.html" changelist="c833ea98-ece4-4f46-a6ab-a86313dae954" time="1369719775250" ignored="false" />
     <file path="/crayon.html" changelist="c833ea98-ece4-4f46-a6ab-a86313dae954" time="1369719094987" ignored="false" />
     <file path="/style.css" changelist="c833ea98-ece4-4f46-a6ab-a86313dae954" time="1369714786784" ignored="false" />
-    <file path="/main.css" changelist="c833ea98-ece4-4f46-a6ab-a86313dae954" time="1369720681833" ignored="false" />
+    <file path="/main.css" changelist="c833ea98-ece4-4f46-a6ab-a86313dae954" time="1369720913918" ignored="false" />
     <file path="/2013-05-28-welcome-to-jekyll.markdown" changelist="c833ea98-ece4-4f46-a6ab-a86313dae954" time="1369718055654" ignored="false" />
     <file path="/index.html" changelist="c833ea98-ece4-4f46-a6ab-a86313dae954" time="1369718952985" ignored="false" />
     <file path="/a.dummy" changelist="c833ea98-ece4-4f46-a6ab-a86313dae954" time="1369720379757" ignored="false" />
@@ -115,7 +114,7 @@
       <file leaf-file-name="main.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="48" column="18" selection-start="596" selection-end="596" vertical-scroll-proportion="0.63286716">
+            <state line="71" column="19" selection-start="901" selection-end="901" vertical-scroll-proportion="0.7902098">
               <folding />
             </state>
           </provider>
@@ -588,7 +587,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="18" selection-start="596" selection-end="596" vertical-scroll-proportion="0.63286716">
+        <state line="71" column="19" selection-start="901" selection-end="901" vertical-scroll-proportion="0.7902098">
           <folding />
         </state>
       </provider>

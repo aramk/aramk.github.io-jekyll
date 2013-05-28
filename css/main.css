@@ -24,6 +24,11 @@ ul.posts {
     margin-bottom: 20px;
 }
 
+.posts article .meta {
+    border-bottom: 1px solid #eee;
+    margin-bottom: 10px;
+}
+
 .posts article .title h3 {
     font-size: 20px;
     line-height: 26px;
@@ -50,12 +55,19 @@ article.single .date {
     font-size: 15px;
 }
 
-.posts article .title,
-.posts article .date {
+.posts article .title {
     line-height: 46px;
+}
+
+.posts article .date {
+    margin-top: 15px;
 }
 
 article .date {
     float: right;
     color: #999;
+}
+
+article.single h1 {
+    font-size: 30px;
 }
