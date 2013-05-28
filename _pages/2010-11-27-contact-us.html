@@ -1,0 +1,42 @@
+---
+layout: page
+title: Contact
+tags: []
+status: private
+type: page
+published: false
+meta:
+  _edit_last: '1'
+  name: ''
+  version: ''
+  desc: ''
+  usage: ''
+  param: ''
+  return: ''
+  _wp_page_template: default
+---
+<?php
+// Get message sent from contact form
+$message = $_POST["message"];
+
+// If message is not blank
+if (trim($message) != "") {
+	// Try to send it, turn off errors
+	ini_set('display_errors', 0);
+	if ( mail("akarmenia@gmail.com", "Website Message", $message) ) {
+		// All is well
+		echo 'Message sent successfully.';
+		$message = "";
+	} else {
+		// Send failed
+		echo 'Message was not sent, contact my email.';
+	}
+	// Turn errors back on
+	ini_set('display_errors', 1);
+}
+?>
+
+<div id="contact-form">
+    <form id="form_contact" name="form_contact" method="post" action="">
+        <textarea id="message" name="message" rows="10"><?php echo $message; ?></textarea><?php echo ak_submit('Send'); ?></form>
+</div>

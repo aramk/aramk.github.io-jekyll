@@ -1,0 +1,53 @@
+---
+layout: post
+title: Crayon is complete
+tags:
+- Projects
+status: publish
+type: post
+published: true
+meta:
+  _edit_last: '1'
+  name: ''
+  version: ''
+  desc: ''
+  usage: ''
+  param: ''
+  return: ''
+  dsq_thread_id: '570244318'
+---
+<p>I'm happy to say that Crayon Syntax Highlighter is finally complete. This site is running version 1.0.0 and there doesn't appear to be any hiccups so far.</p>
+
+<p>You can download the plugin from here:</p>
+
+<p><a target="_blank" href="http://wordpress.org/extend/plugins/crayon-syntax-highlighter/" title="http://wordpress.org/extend/plugins/crayon-syntax-highlighter/">http://wordpress.org/extend/plugins/crayon-syntax-highlighter/</a></p>
+
+<p>Here's a preview in both themes in two languages, and the shortcodes that did the magic:</p>
+
+$[crayon url="https://raw.github.com/gist/1131372/8dc9a498e2993c1c673d95d1857e821f8f9230c8/sample.php" /]
+
+<p><pre class="url:https://raw.github.com/gist/1131372/8dc9a498e2993c1c673d95d1857e821f8f9230c8/sample.php " ></pre></p>
+
+$[crayon theme="twilight" lang="objc"]
+#import <objc/Object.h>
+@interface Forwarder : Object {
+    id recipient; // The object we want to forward the message to.
+}
+// Accessor methods.
+- (id) recipient;
+- (id) setRecipient:(id)_recipient;
+@end
+[/crayon]$
+
+<pre class="theme:twilight lang:objc " >
+#import <objc/Object.h>
+@interface Forwarder : Object {
+    id recipient; // The object we want to forward the message to.
+}
+// Accessor methods.
+- (id) recipient;
+- (id) setRecipient:(id)_recipient;
+@end
+</pre>
+
+<p>If you end up here after clicking a link in Crayon and you're after documentation: for the moment it's probably best to contact me on twitter or send me an email.</p>

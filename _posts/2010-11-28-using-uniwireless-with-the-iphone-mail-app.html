@@ -1,0 +1,120 @@
+---
+layout: post
+title: Using UniWireless with the iPhone Mail App
+tags:
+- iOS
+status: publish
+type: post
+published: true
+meta:
+  _edit_last: '1'
+  _aioseop_title: Using UniWireless with the iPhone Mail App
+  _wp_old_slug: ''
+  _aioseop_description: How to use your iPhone Mail App on the UniWireless network
+    at the University of Melbourne to read your email.
+  usage: ''
+  param: ''
+  return: ''
+  version: ''
+  desc: ''
+  name: ''
+  _aioseop_keywords: iphone unimelb, unimelb email, uniwireless email iphone, unimelb
+    email iphone
+  dsq_thread_id: '1037854331'
+---
+<strong>UPDATE:</strong>
+With the new email addresses set up through Google Apps:
+<strong>someguy@student.unimelb.edu.au</strong>
+There appears to have been some changes to the SMTP server policy. I can confirm that sending and receiving emails from a Gmail account on iOS 4.2.1 works just fine, if you are trying to send emails on the UniWireless network from a Gmail account, there is no need to set up the Unimelb SMTP server in order to do so. If you want to use your new Unimelb email account to on UniWireless, just add a new Gmail account like so:
+
+<div style="text-align:center;">
+1. Go to Settings > Mail > Add Account > Gmail > enter your account details.
+Ensure that you use your <strong>student.unimelb.edu.au</strong> email address.
+2. Select only Mail from the list of services.
+3. Your new account will appear beside the existing ones in the Mail App.
+
+That's it, your UniMelb email account can be used to send and receive emails on UniWireless!
+
+<strong>BELOW IS THE OLD GUIDE FOR THE OLD EMAIL ADDRESSES (@ugrad.unimelb.edu.au)</strong>
+</div>
+
+This guide will allow you to use your University of Melbourne email on the iPhone at uni to send and receive email using your uni email account. You can also use a different email account imap/pop for incoming email (eg. your gmail) and use the uni smtp to send out the email on its behalf.
+
+<h2>Setting up your University of Melbourne email account</h2>
+First, set up your uni mail as a seperate email account by following these steps. Make sure you are connected to <a href="http://www.its.unimelb.edu.au/support/networks/wireless/uniwireless" target="_blank">UniWireless</a>. I used the Manual Proxy Settings, not the .pac file.
+
+<div style="text-align:center;">
+1. Go to Settings on the home screen. Then click Mail...
+<a href="http://localsite.com/ak/wp-content/uploads/2010/11/01.png"><img src="http://localsite.com/ak/wp-content/uploads/2010/11/01.png" alt="" width="320" height="480" class="aligncenter size-full wp-image-136" /></a>
+
+2. Click Add Account.
+<a href="http://localsite.com/ak/wp-content/uploads/2010/11/02.png"><img src="http://localsite.com/ak/wp-content/uploads/2010/11/02.png" alt="" width="320" height="480" class="aligncenter size-full wp-image-137" /></a>
+
+3. Click Other.
+<a href="http://localsite.com/ak/wp-content/uploads/2010/11/03.png"><img src="http://localsite.com/ak/wp-content/uploads/2010/11/03.png" alt="" width="320" height="480" class="aligncenter size-full wp-image-138" /></a>
+
+4. Click Add Mail Account.
+<a href="http://localsite.com/ak/wp-content/uploads/2010/11/04.png"><img src="http://localsite.com/ak/wp-content/uploads/2010/11/04.png" alt="" width="320" height="480" class="aligncenter size-full wp-image-139" /></a>
+
+5. Enter your email address and password. Use the standard:
+<strong>initial.surname@ugrad.unimelb.edu.au</strong>
+Then fill out your standard uni password you use to log onto computers. Hopefully your password will be more legible. Click Save.
+<a href="http://localsite.com/ak/wp-content/uploads/2010/11/05.png"><img src="http://localsite.com/ak/wp-content/uploads/2010/11/05.png" alt="" width="320" height="480" class="aligncenter size-full wp-image-140" /></a>
+
+6. Enter the following host name under Incoming Mail Server:
+<strong>mail.student.unimelb.edu.au</strong>
+Fill the username and password as your university username and password. Scroll down.
+<a href="http://localsite.com/ak/wp-content/uploads/2010/11/06.png"><img src="http://localsite.com/ak/wp-content/uploads/2010/11/06.png" alt="" width="320" height="480" class="aligncenter size-full wp-image-141" /></a>
+
+7. Enter the following host under Outgoing Mail Server:
+<strong>smtp.unimelb.edu.au</strong>
+Leave the optional fields blank. Click Save.
+<a href="http://localsite.com/ak/wp-content/uploads/2010/11/07.png"><img src="http://localsite.com/ak/wp-content/uploads/2010/11/07.png" alt="" width="320" height="480" class="aligncenter size-full wp-image-142" /></a>
+
+8. It will now contact both servers for verification. Hang in there.
+<a href="http://localsite.com/ak/wp-content/uploads/2010/11/08.png"><img src="http://localsite.com/ak/wp-content/uploads/2010/11/08.png" alt="" width="320" height="480" class="aligncenter size-full wp-image-143" /></a>
+
+9. It will give you this error. Click Yes.
+<a href="http://localsite.com/ak/wp-content/uploads/2010/11/10.png"><img src="http://localsite.com/ak/wp-content/uploads/2010/11/10.png" alt="" width="320" height="480" class="aligncenter size-full wp-image-145" /></a>
+
+10. If you see the screen below, it seems to have worked! Check the settings by clicking on the email account.
+<a href="http://localsite.com/ak/wp-content/uploads/2010/11/12.png"><img src="http://localsite.com/ak/wp-content/uploads/2010/11/12.png" alt="" width="320" height="480" class="aligncenter size-full wp-image-147" /></a>
+
+<a name="11"></a>
+11. You can check the smtp settings if you like. It will be under Outgoing Mail Server > Primary Server.
+<a href="http://localsite.com/ak/wp-content/uploads/2010/11/13.png"><img src="http://localsite.com/ak/wp-content/uploads/2010/11/13.png" alt="" width="320" height="480" class="aligncenter size-full wp-image-148" /></a>
+
+12. In the Mail application, go to your list of accounts. If this is your first email account it will automatically load your account.
+<a href="http://localsite.com/ak/wp-content/uploads/2010/11/14.png"><img src="http://localsite.com/ak/wp-content/uploads/2010/11/14.png" alt="" width="320" height="480" class="aligncenter size-full wp-image-149" /></a>
+
+13. Here are your uni emails.
+<a href="http://localsite.com/ak/wp-content/uploads/2010/11/15.png"><img src="http://localsite.com/ak/wp-content/uploads/2010/11/15.png" alt="" width="320" height="480" class="aligncenter size-full wp-image-150" /></a>
+</div>
+
+You can send and receive as long as you are on UniWireless. Once you leave UniWireless, you will be able to view, but not send, your emails. If it happens that you send an email while not using UniWireless but don't want to wait an eternity for the server to tell you that your a fool, just restart the Mail app by holding down the power button until you see the usual "Slide to power off" and then release the power button and press the home button down until you see the Mail app close.
+
+<h2>Setting up another email account to send through University of Melbourne server</h2>
+You aren't supposed to be able to send email on UniWireless from any other smtp server other than the university's email server. These steps show how you can set up any email account to use the University of Melbourne's smtp server.
+I am using a Gmail imap account for this example, on 3G.
+
+<div style="text-align:center;">
+1. Go to Settings on the home screen. Then click Mail...
+<a href="http://localsite.com/ak/wp-content/uploads/2010/11/01.png"><img src="http://localsite.com/ak/wp-content/uploads/2010/11/01.png" alt="" width="320" height="480" class="aligncenter size-full wp-image-136" /></a>
+
+2. Click on the account you want to use.
+<a href="http://localsite.com/ak/wp-content/uploads/2010/11/18.png"><img src="http://localsite.com/ak/wp-content/uploads/2010/11/18.png" alt="" width="320" height="480" class="aligncenter size-full wp-image-153" /></a>
+
+3. Click on the Outgoing Mail Server.
+<a href="http://localsite.com/ak/wp-content/uploads/2010/11/22.png"><img src="http://localsite.com/ak/wp-content/uploads/2010/11/22.png" alt="" width="320" height="480" class="aligncenter size-full wp-image-157" /></a>
+
+4. If you do not want to wait for the Gmail server to fail and then try the other smtp servers in succession, click the primary server.
+<a href="http://localsite.com/ak/wp-content/uploads/2010/11/19.png"><img src="http://localsite.com/ak/wp-content/uploads/2010/11/19.png" alt="" width="320" height="480" class="aligncenter size-full wp-image-154" /></a>
+
+5. Turn off the server.
+<a href="http://localsite.com/ak/wp-content/uploads/2010/11/20.png"><img src="http://localsite.com/ak/wp-content/uploads/2010/11/20.png" alt="" width="320" height="480" class="aligncenter size-full wp-image-155" /></a>
+
+6. The primary server should be off, and the smtp.unimelb.edu.au server should be on. You may have duplicate servers depending on your previous email settings. To check if the correct smtp server is in use, click on it and compare it with <a href="#11">these settings</a>.
+<a href="http://localsite.com/ak/wp-content/uploads/2010/11/21.png"><img src="http://localsite.com/ak/wp-content/uploads/2010/11/21.png" alt="" title="21" width="320" height="480" class="aligncenter size-full wp-image-156" /></a>
+</div>
+
+Now when you are at uni using UniWireless you just turn off the primary email server and use the University of Melbourne email server. When you stop using UniWireless, just turn it back on again. Please ignore any time, power, or network notifications on the top of every screenshot, they are not relevant. Post all your comments on this <a href="http://forums.whirlpool.net.au/forum-replies.cfm?t=976856" target="_blank">thread</a>, or right here where I'll reply faster. Thanks.
