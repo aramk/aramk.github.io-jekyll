@@ -1,5 +1,6 @@
 .ribbon {
-    z-index: 1000;
+    z-index: 2000;
+    position: fixed !important;
 }
 
 .main-container {
@@ -8,4 +9,35 @@
 
 ul.posts {
     list-style: none;
+}
+
+.posts article {
+    margin-bottom: 20px;
+}
+
+.posts article .title h3 {
+    font-size: 20px;
+    line-height: 26px;
+    padding-bottom: 0;
+}
+
+.posts article,
+.posts article .meta {
+    float: left;
+    width: 100%;
+    clear: both;
+}
+
+.posts article .title {
+    float: left;
+}
+
+.posts article .title,
+.posts article .date {
+    line-height: 46px;
+}
+
+.posts article .date {
+    float: right;
+    color: #999;
 }

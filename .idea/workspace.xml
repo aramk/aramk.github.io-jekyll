@@ -2,162 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c833ea98-ece4-4f46-a6ab-a86313dae954" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_plugins/blurb.rb" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_attachments/2010-11-25-ak_5-0.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_attachments/2010-11-27-helloworld.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_attachments/2010-11-28-01.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_attachments/2010-11-28-02.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_attachments/2010-11-28-03.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_attachments/2010-11-28-04.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_attachments/2010-11-28-05.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_attachments/2010-11-28-06.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_attachments/2010-11-28-07.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_attachments/2010-11-28-08.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_attachments/2010-11-28-09.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_attachments/2010-11-28-10.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_attachments/2010-11-28-11.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_attachments/2010-11-28-12.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_attachments/2010-11-28-13.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_attachments/2010-11-28-14.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_attachments/2010-11-28-15.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_attachments/2010-11-28-16.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_attachments/2010-11-28-17.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_attachments/2010-11-28-18.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_attachments/2010-11-28-19.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_attachments/2010-11-28-20.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_attachments/2010-11-28-21.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_attachments/2010-11-28-22.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_attachments/2010-11-30-img_0223.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_attachments/2010-11-30-img_0224.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_attachments/2010-11-30-img_0225.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_attachments/2010-11-30-img_0226.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_attachments/2010-12-05-1-2.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_attachments/2010-12-05-1.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_attachments/2010-12-05-2-2.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_attachments/2010-12-05-2.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_attachments/2010-12-05-3-2.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_attachments/2010-12-05-3.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_attachments/2010-12-05-4.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_attachments/2010-12-05-6.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_attachments/2010-12-05-8.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_attachments/2010-12-05-9.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_attachments/2011-03-30-img_0631-2.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_attachments/2011-03-30-img_0631.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_attachments/2011-03-30-img_0632.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_attachments/2011-03-30-img_0633.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_attachments/2011-03-30-img_0634.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_attachments/2011-04-10-crayon_200-2.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_attachments/2011-04-10-crayon_200.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_attachments/2011-09-15-screen-shot-2011-09-15-at-1-16-11-am.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_attachments/2011-09-18-screen-shot-2011-09-18-at-2-16-31-am.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_attachments/2011-12-12-enqueue.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_attachments/2011-12-25-1-7-0-2.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_attachments/2011-12-25-1-7.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_attachments/2011-12-27-screen-shot-2011-12-27-at-8-53-34-pm.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_attachments/2011-12-29-screen-shot-2011-12-29-at-12-58-43-am.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_attachments/2012-01-05-parallax.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_attachments/2012-01-07-screen-shot-2012-01-07-at-5-48-11-pm.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_attachments/2012-01-23-screen-shot-2012-01-23-at-7-17-07-pm.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_attachments/2012-01-28-rhtml.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_attachments/2012-01-28-ruby.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_attachments/2012-01-30-ios-icon.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_attachments/2012-02-12-asana.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_attachments/2012-03-03-default-2.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_attachments/2012-03-03-default.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_attachments/2012-03-07-screen-shot-2012-03-07-at-12-18-53-pm.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_attachments/2012-03-08-screen-shot-2012-03-08-at-12-20-43-am.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_attachments/2012-03-25-screen-shot-2012-03-25-at-2-19-29-pm.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_attachments/2012-03-25-screen-shot-2012-03-25-at-2-20-16-pm.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_attachments/2012-03-25-screen-shot-2012-03-25-at-2-23-27-pm.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_attachments/2012-03-25-screen-shot-2012-03-25-at-2-32-39-pm.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_attachments/2012-03-25-screen-shot-2012-03-25-at-2-37-20-pm.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_attachments/2012-03-25-screen-shot-2012-03-25-at-2-40-54-pm.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_attachments/2012-03-25-screen-shot-2012-03-25-at-2-41-25-pm.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_attachments/2012-03-25-screen-shot-2012-03-25-at-3-00-03-pm.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_attachments/2012-06-25-crayon.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_attachments/2012-08-11-screen-shot-2012-08-11-at-2-24-06-am.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_attachments/2012-09-02-screen-shot-2012-09-02-at-3-09-37-am.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_attachments/2012-09-02-screen-shot-2012-09-02-at-3-09-50-am.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_attachments/2012-09-02-screen-shot-2012-09-02-at-3-10-09-am.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_attachments/2012-09-08-screen-shot-2012-09-08-at-1-48-13-am.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_attachments/2012-09-08-screen-shot-2012-09-08-at-1-48-26-am.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_attachments/2012-09-08-screen-shot-2012-09-08-at-1-48-43-am.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_attachments/2012-09-26-screen-shot-2012-09-26-at-12-04-07-am.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_attachments/2012-09-26-screen-shot-2012-09-26-at-12-04-16-am.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_attachments/2012-09-26-screen-shot-2012-09-26-at-12-04-44-am.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_attachments/2012-09-26-screen-shot-2012-09-26-at-12-04-59-am.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_attachments/2012-09-26-screen-shot-2012-09-26-at-12-05-10-am.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_attachments/2012-09-26-screen-shot-2012-09-26-at-12-05-32-am.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_attachments/2012-09-26-screen-shot-2012-09-26-at-12-26-35-am.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_attachments/2012-09-26-screen-shot-2012-09-26-at-6-40-57-pm.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_attachments/2012-09-26-screen-shot-2012-09-26-at-6-41-03-pm.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_attachments/2012-09-26-warning.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_attachments/2012-12-04-screen-shot-2012-12-04-at-5-14-47-pm.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_attachments/2012-12-04-screen-shot-2012-12-04-at-5-15-13-pm.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_attachments/2012-12-06-screen-shot-2012-12-06-at-12-34-36-am.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_attachments/2012-12-14-non-retina.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_attachments/2012-12-14-retina.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_attachments/2012-12-28-1-3.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_attachments/2012-12-28-2-3.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_attachments/2012-12-28-screen-shot-2012-12-28-at-3-39-55-pm.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_attachments/2012-12-28-screen-shot-2012-12-28-at-3-40-07-pm.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_attachments/2012-12-30-screen-shot-2012-12-30-at-1-01-26-am.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_attachments/2012-12-30-screen-shot-2012-12-30-at-1-06-39-am.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_attachments/2012-12-30-screen-shot-2012-12-30-at-1-07-43-am.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_attachments/2012-12-30-screen-shot-2012-12-30-at-1-19-57-am.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_attachments/2012-12-30-screen-shot-2012-12-30-at-1-55-15-am.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_attachments/2012-12-30-screen-shot-2012-12-30-at-12-43-47-am.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_attachments/2012-12-30-screen-shot-2012-12-30-at-12-54-10-am.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_attachments/2012-12-30-screen-shot-2012-12-30-at-12-56-57-am.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_attachments/2012-12-30-screen-shot-2012-12-30-at-2-03-45-am.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_attachments/2013-01-02-screen-shot-2013-01-02-at-1-44-40-am.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_attachments/2013-01-04-screen-shot-2013-01-04-at-5-21-12-pm.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_attachments/2013-01-15-screen-shot-2013-01-15-at-9-55-01-pm.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_attachments/2013-01-15-screen-shot-2013-01-15-at-9-57-16-pm.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_attachments/2013-01-21-crayon-2.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_attachments/2013-01-21-donate_large.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_attachments/2013-01-21-gambitron_smooth.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_attachments/2013-01-21-gambitron_smooth_glow.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_nav_menu_items/2010-11-30-166.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_nav_menu_items/2011-11-24-632.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_nav_menu_items/2011-11-24-633.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_nav_menu_items/2011-11-24-crayon-language-spec.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_nav_menu_items/2011-11-24-crayon-syntax-highlighter.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_nav_menu_items/2011-12-27-mini-tags-and-plain-tags.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_nav_menu_items/2011-12-27-mixed-language-highlighting.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_nav_menu_items/2012-01-16-756.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_nav_menu_items/2012-01-16-gambitron.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_nav_menu_items/2012-03-28-tag-editor.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_nav_menu_items/2012-05-06-css-to-json-converter-for-javascript-2.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_nav_menu_items/2012-05-06-imdb-scraper-grabber-2.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_nav_menu_items/2012-05-06-jquery-popup-window-2.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_nav_menu_items/2012-05-06-masters-degree.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_nav_menu_items/2012-05-06-mechanix.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_nav_menu_items/2012-05-06-mutopia-research-project.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_nav_menu_items/2012-05-06-php-development.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_nav_menu_items/2012-05-06-shadow-wing-2.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_nav_menu_items/2012-05-09-933.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_nav_menu_items/2012-07-21-css-background-size-jquery-plugin.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_nav_menu_items/2012-09-26-converting-legacy-tags-to.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_nav_menu_items/2012-09-26-crayon-with-bbpress.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_nav_menu_items/2012-09-26-internal-post-management-in-crayon.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_nav_menu_items/2013-01-24-crayon.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_wpcf7_contact_forms/2012-03-11-contact-form-1.html" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_layouts/bootstrap.html" afterPath="$PROJECT_DIR$/_layouts/bootstrap.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/crayon.html" afterPath="$PROJECT_DIR$/projects/crayon.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/index.html" afterPath="$PROJECT_DIR$/projects/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/main.css" afterPath="$PROJECT_DIR$/css/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_layouts/page.html" afterPath="$PROJECT_DIR$/_layouts/page.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_layouts/post.html" afterPath="$PROJECT_DIR$/_layouts/post.html" />
     </list>
     <ignored path="aramk.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="c833ea98-ece4-4f46-a6ab-a86313dae954" time="1369714079533" ignored="false" />
-    <file path="/bootstrap.html" changelist="c833ea98-ece4-4f46-a6ab-a86313dae954" time="1369716359211" ignored="false" />
-    <file path="/crayon.html" changelist="c833ea98-ece4-4f46-a6ab-a86313dae954" time="1369714746989" ignored="false" />
+    <file path="/Dummy.txt" changelist="c833ea98-ece4-4f46-a6ab-a86313dae954" time="1369719425511" ignored="false" />
+    <file path="/bootstrap.html" changelist="c833ea98-ece4-4f46-a6ab-a86313dae954" time="1369719775250" ignored="false" />
+    <file path="/crayon.html" changelist="c833ea98-ece4-4f46-a6ab-a86313dae954" time="1369719094987" ignored="false" />
     <file path="/style.css" changelist="c833ea98-ece4-4f46-a6ab-a86313dae954" time="1369714786784" ignored="false" />
-    <file path="/main.css" changelist="c833ea98-ece4-4f46-a6ab-a86313dae954" time="1369716471058" ignored="false" />
+    <file path="/main.css" changelist="c833ea98-ece4-4f46-a6ab-a86313dae954" time="1369719072116" ignored="false" />
     <file path="/2013-05-28-welcome-to-jekyll.markdown" changelist="c833ea98-ece4-4f46-a6ab-a86313dae954" time="1369718055654" ignored="false" />
-    <file path="/index.html" changelist="c833ea98-ece4-4f46-a6ab-a86313dae954" time="1369718123935" ignored="false" />
+    <file path="/index.html" changelist="c833ea98-ece4-4f46-a6ab-a86313dae954" time="1369718952985" ignored="false" />
     <file path="/a.dummy" changelist="c833ea98-ece4-4f46-a6ab-a86313dae954" time="1369716953898" ignored="false" />
     <file path="/excerpt.rb" changelist="c833ea98-ece4-4f46-a6ab-a86313dae954" time="1369717502973" ignored="false" />
     <file path="/temp.rb" changelist="c833ea98-ece4-4f46-a6ab-a86313dae954" time="1369717996056" ignored="false" />
@@ -181,19 +40,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="bootstrap.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="bootstrap.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/_layouts/bootstrap.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="27" selection-start="754" selection-end="754" vertical-scroll-proportion="8.75">
+            <state line="73" column="81" selection-start="2808" selection-end="2808" vertical-scroll-proportion="0.51962614">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/projects/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="1" column="12" selection-start="16" selection-end="16" vertical-scroll-proportion="-0.625">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="23" selection-start="284" selection-end="284" vertical-scroll-proportion="0.24635036">
+            <state line="8" column="14" selection-start="145" selection-end="145" vertical-scroll-proportion="-5.0">
               <folding />
             </state>
           </provider>
@@ -226,15 +94,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="page.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_layouts/page.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="24" selection-start="50" selection-end="50" vertical-scroll-proportion="-1.875">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="post.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_layouts/post.html">
           <provider selected="true" editor-type-id="text-editor">
@@ -256,7 +115,7 @@
       <file leaf-file-name="crayon.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/projects/crayon.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="16" selection-start="205" selection-end="205" vertical-scroll-proportion="-9.375">
+            <state line="18" column="23" selection-start="503" selection-end="503" vertical-scroll-proportion="-10.625">
               <folding>
                 <element signature="n#style#0;n#img#0;n#a#0;n#!!top" expanded="true" />
               </folding>
@@ -267,7 +126,7 @@
       <file leaf-file-name="main.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="20" selection-start="107" selection-end="107" vertical-scroll-proportion="0.0">
+            <state line="2" column="30" selection-start="59" selection-end="59" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -295,15 +154,16 @@
         <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/_layouts/page.html" />
         <option value="$PROJECT_DIR$/_layouts/post.html" />
-        <option value="$PROJECT_DIR$/projects/crayon.html" />
-        <option value="$PROJECT_DIR$/_layouts/bootstrap.html" />
-        <option value="$PROJECT_DIR$/css/main.css" />
         <option value="$PROJECT_DIR$/_plugins/test.rb" />
         <option value="$PROJECT_DIR$/_plugins/excerpt.rb" />
         <option value="$PROJECT_DIR$/_layouts/default.html" />
         <option value="$PROJECT_DIR$/_plugins/blurb.rb" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/_posts/2013-05-28-welcome-to-jekyll.markdown" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/projects/index.html" />
+        <option value="$PROJECT_DIR$/css/main.css" />
+        <option value="$PROJECT_DIR$/projects/crayon.html" />
+        <option value="$PROJECT_DIR$/_layouts/bootstrap.html" />
       </list>
     </option>
   </component>
@@ -354,6 +214,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="aramk" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="aramk" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="aramk" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="projects" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -656,32 +530,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/projects/crayon.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="16" selection-start="205" selection-end="205" vertical-scroll-proportion="-9.375">
-          <folding>
-            <element signature="n#style#0;n#img#0;n#a#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="20" selection-start="107" selection-end="107" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_layouts/default.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="14" column="11" selection-start="427" selection-end="427" vertical-scroll-proportion="-8.75">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_layouts/bootstrap.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="27" selection-start="754" selection-end="754" vertical-scroll-proportion="8.75">
           <folding />
         </state>
       </provider>
@@ -702,7 +553,37 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="23" selection-start="284" selection-end="284" vertical-scroll-proportion="0.24635036">
+        <state line="8" column="14" selection-start="145" selection-end="145" vertical-scroll-proportion="-5.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="12" selection-start="16" selection-end="16" vertical-scroll-proportion="-0.625">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="30" selection-start="59" selection-end="59" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/crayon.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="23" selection-start="503" selection-end="503" vertical-scroll-proportion="-10.625">
+          <folding>
+            <element signature="n#style#0;n#img#0;n#a#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_layouts/bootstrap.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="73" column="81" selection-start="2808" selection-end="2808" vertical-scroll-proportion="0.51962614">
           <folding />
         </state>
       </provider>
