@@ -1,13 +1,17 @@
 ---
-layout: default
-title: Aram Kocharyan
+layout: bootstrap
+<!-- title: Aram Kocharyan -->
 ---
 
 <div id="home">
-  <h1>Blog Posts</h1>
   <ul class="posts">
     {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+      <li><a class="title" href="{{ post.url }}">{{ post.title }}</a><span class="date">{{ post.date | date_to_string }}</span></li>
+          {% if post.blurb %}
+                {{ post.blurb | markdown }}
+          {% else %}
+                {{ post.content | strip_html | truncatewords: 80 }}
+          {% endif %}
     {% endfor %}
   </ul>
 </div>
