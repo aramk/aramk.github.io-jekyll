@@ -1,3 +1,11 @@
+html {
+    background-color: #f5f5f5;
+}
+
+body {
+    background-color: #fff;
+}
+
 .ribbon {
     z-index: 2000;
     position: fixed !important;
@@ -5,6 +13,7 @@
 
 .main-container {
     padding-top: 20px;
+    min-height: 500px;
 }
 
 ul.posts {
@@ -21,15 +30,24 @@ ul.posts {
     padding-bottom: 0;
 }
 
-.posts article,
-.posts article .meta {
+article,
+article .meta {
     float: left;
     width: 100%;
     clear: both;
 }
 
-.posts article .title {
+article .title {
     float: left;
+}
+
+article.single .meta {
+    margin-bottom: 20px;
+}
+
+article.single .date {
+    margin-top: 25px;
+    font-size: 15px;
 }
 
 .posts article .title,
@@ -37,7 +55,7 @@ ul.posts {
     line-height: 46px;
 }
 
-.posts article .date {
+article .date {
     float: right;
     color: #999;
 }

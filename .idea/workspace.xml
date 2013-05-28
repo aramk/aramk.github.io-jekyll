@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c833ea98-ece4-4f46-a6ab-a86313dae954" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_layouts/bootstrap.html" afterPath="$PROJECT_DIR$/_layouts/bootstrap.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/crayon.html" afterPath="$PROJECT_DIR$/projects/crayon.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/index.html" afterPath="$PROJECT_DIR$/projects/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/main.css" afterPath="$PROJECT_DIR$/css/main.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_layouts/post.html" afterPath="$PROJECT_DIR$/_layouts/post.html" />
     </list>
     <ignored path="aramk.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -14,13 +11,14 @@
     <file path="/bootstrap.html" changelist="c833ea98-ece4-4f46-a6ab-a86313dae954" time="1369719775250" ignored="false" />
     <file path="/crayon.html" changelist="c833ea98-ece4-4f46-a6ab-a86313dae954" time="1369719094987" ignored="false" />
     <file path="/style.css" changelist="c833ea98-ece4-4f46-a6ab-a86313dae954" time="1369714786784" ignored="false" />
-    <file path="/main.css" changelist="c833ea98-ece4-4f46-a6ab-a86313dae954" time="1369719072116" ignored="false" />
+    <file path="/main.css" changelist="c833ea98-ece4-4f46-a6ab-a86313dae954" time="1369720681833" ignored="false" />
     <file path="/2013-05-28-welcome-to-jekyll.markdown" changelist="c833ea98-ece4-4f46-a6ab-a86313dae954" time="1369718055654" ignored="false" />
     <file path="/index.html" changelist="c833ea98-ece4-4f46-a6ab-a86313dae954" time="1369718952985" ignored="false" />
-    <file path="/a.dummy" changelist="c833ea98-ece4-4f46-a6ab-a86313dae954" time="1369716953898" ignored="false" />
+    <file path="/a.dummy" changelist="c833ea98-ece4-4f46-a6ab-a86313dae954" time="1369720379757" ignored="false" />
     <file path="/excerpt.rb" changelist="c833ea98-ece4-4f46-a6ab-a86313dae954" time="1369717502973" ignored="false" />
     <file path="/temp.rb" changelist="c833ea98-ece4-4f46-a6ab-a86313dae954" time="1369717996056" ignored="false" />
     <file path="/blurb.rb" changelist="c833ea98-ece4-4f46-a6ab-a86313dae954" time="1369717990106" ignored="false" />
+    <file path="/post.html" changelist="c833ea98-ece4-4f46-a6ab-a86313dae954" time="1369720570865" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,19 +38,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="bootstrap.html" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/_layouts/bootstrap.html">
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/projects/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="73" column="81" selection-start="2808" selection-end="2808" vertical-scroll-proportion="0.51962614">
+            <state line="1" column="12" selection-start="16" selection-end="16" vertical-scroll-proportion="-0.625">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/projects/index.html">
+      <file leaf-file-name="page.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_layouts/page.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="12" selection-start="16" selection-end="16" vertical-scroll-proportion="-0.625">
+            <state line="3" column="3" selection-start="29" selection-end="29" vertical-scroll-proportion="-1.875">
               <folding />
             </state>
           </provider>
@@ -76,15 +74,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="2013-05-28-welcome-to-jekyll.markdown" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_posts/2013-05-28-welcome-to-jekyll.markdown">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="3" selection-start="103" selection-end="103" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="_config.yml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_config.yml">
           <provider selected="true" editor-type-id="text-editor">
@@ -97,7 +86,7 @@
       <file leaf-file-name="post.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_layouts/post.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="24" selection-start="50" selection-end="50" vertical-scroll-proportion="-1.875">
+            <state line="7" column="65" selection-start="188" selection-end="188" vertical-scroll-proportion="-4.375">
               <folding />
             </state>
           </provider>
@@ -123,10 +112,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.css" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="main.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="30" selection-start="59" selection-end="59" vertical-scroll-proportion="0.0">
+            <state line="48" column="18" selection-start="596" selection-end="596" vertical-scroll-proportion="0.63286716">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="2013-01-15-minimizing-code-in-crayon.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_posts/2013-01-15-minimizing-code-in-crayon.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="10" selection-start="91" selection-end="91" vertical-scroll-proportion="-3.75">
               <folding />
             </state>
           </provider>
@@ -153,7 +151,6 @@
         <option value="$PROJECT_DIR$/lib/bootstrap/css/docs.css" />
         <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/_layouts/page.html" />
-        <option value="$PROJECT_DIR$/_layouts/post.html" />
         <option value="$PROJECT_DIR$/_plugins/test.rb" />
         <option value="$PROJECT_DIR$/_plugins/excerpt.rb" />
         <option value="$PROJECT_DIR$/_layouts/default.html" />
@@ -161,9 +158,10 @@
         <option value="$PROJECT_DIR$/_posts/2013-05-28-welcome-to-jekyll.markdown" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/projects/index.html" />
-        <option value="$PROJECT_DIR$/css/main.css" />
         <option value="$PROJECT_DIR$/projects/crayon.html" />
         <option value="$PROJECT_DIR$/_layouts/bootstrap.html" />
+        <option value="$PROJECT_DIR$/_layouts/post.html" />
+        <option value="$PROJECT_DIR$/css/main.css" />
       </list>
     </option>
   </component>
@@ -502,20 +500,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_layouts/page.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="24" selection-start="50" selection-end="50" vertical-scroll-proportion="-1.875">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_layouts/post.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="24" selection-start="50" selection-end="50" vertical-scroll-proportion="-1.875">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_config.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -544,30 +528,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2013-05-28-welcome-to-jekyll.markdown">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="3" selection-start="103" selection-end="103" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="14" selection-start="145" selection-end="145" vertical-scroll-proportion="-5.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projects/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="12" selection-start="16" selection-end="16" vertical-scroll-proportion="-0.625">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="30" selection-start="59" selection-end="59" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -581,9 +544,51 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2012-07-21-css-background-size-jquery-plugin.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2013-01-15-minimizing-code-in-crayon.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="10" selection-start="91" selection-end="91" vertical-scroll-proportion="-3.75">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/_layouts/bootstrap.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="73" column="81" selection-start="2808" selection-end="2808" vertical-scroll-proportion="0.51962614">
+        <state line="62" column="6" selection-start="2456" selection-end="2456" vertical-scroll-proportion="0.27663553">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="12" selection-start="16" selection-end="16" vertical-scroll-proportion="-0.625">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_layouts/page.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="3" selection-start="29" selection-end="29" vertical-scroll-proportion="-1.875">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_layouts/post.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="65" selection-start="188" selection-end="188" vertical-scroll-proportion="-4.375">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="48" column="18" selection-start="596" selection-end="596" vertical-scroll-proportion="0.63286716">
           <folding />
         </state>
       </provider>

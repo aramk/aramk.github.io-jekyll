@@ -1,9 +1,14 @@
 ---
 layout: bootstrap
 ---
-<h1>{{ page.title }}</h1>
-<p class="meta">{{ page.date | date_to_string }}</p>
+<article class="single">
+    <div class="meta">
+        <h1 class="title">{{ page.title }}</h1>
 
-<div id="post">
-{{ content }}
-</div>
+        <span class="date">{{ page.date | date_to_string }}</span>
+    </div>
+
+    <div id="post">
+        {{ content }}
+    </div>
+</article>
