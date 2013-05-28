@@ -29,6 +29,10 @@ ul.posts {
     margin-bottom: 10px;
 }
 
+.posts .blurb {
+    color: #999;
+}
+
 .posts article .title h3 {
     font-size: 20px;
     line-height: 26px;
@@ -36,7 +40,8 @@ ul.posts {
 }
 
 article,
-article .meta {
+article .meta,
+.posts .blurb {
     float: left;
     width: 100%;
     clear: both;
@@ -70,4 +75,29 @@ article .date {
 
 article.single h1 {
     font-size: 30px;
+}
+
+.posts article.first .title h3 {
+    font-size: 25px;
+    line-height: 28px;
+}
+
+@media (max-width: 600px) {
+    .posts article .date {
+        display: none;
+    }
+    .posts article .title h3 {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .posts article .blurb {
+        font-size: 13px;
+    }
+    .main-container {
+        padding-top: 0;
+    }
+    .posts article.first .title h3 {
+        font-size: 20px;
+        line-height: 24px;
+    }
 }

@@ -4,11 +4,16 @@ layout: bootstrap
 
 <div id="home" class="posts">
     {% for post in site.posts %}
-    <article>
+    <article {% if forloop.first %} class="first" {% endif %}>
         <div class="meta">
             <a class="title" href="{{ post.url }}"><h3>{{ post.title }}</h3></a>
             <span class="date">{{ post.date | date_to_string }}</span></li>
         </div>
+        {% if forloop.first %}
+            <div class="content">
+                {{ post.content | markdown }}
+            </div>
+        {% else %}
         <div class="blurb">
             {% if post.blurb %}
             {{ post.blurb | markdown }}
@@ -16,6 +21,7 @@ layout: bootstrap
             {{ post.content | strip_html | truncatewords: 80 }}
             {% endif %}
         </div>
+        {% endif %}
     </article>
     {% endfor %}
 </div>
