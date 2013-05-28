@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c833ea98-ece4-4f46-a6ab-a86313dae954" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/main.css" afterPath="$PROJECT_DIR$/css/main.css" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_posts/2013-01-15-minimizing-code-in-crayon.html" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_layouts/bootstrap.html" afterPath="$PROJECT_DIR$/_layouts/bootstrap.html" />
     </list>
     <ignored path="aramk.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -103,10 +103,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.css" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="main.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="96" column="19" selection-start="1310" selection-end="1310" vertical-scroll-proportion="0.6853147">
+            <state line="96" column="19" selection-start="1310" selection-end="1310" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bootstrap.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/_layouts/bootstrap.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="91" column="26" selection-start="3416" selection-end="3416" vertical-scroll-proportion="0.45183888">
               <folding />
             </state>
           </provider>
@@ -116,15 +125,6 @@
         <entry file="file://$PROJECT_DIR$/lib/bootstrap/css/docs.css">
           <provider selected="true" editor-type-id="text-editor">
             <state line="865" column="1" selection-start="18580" selection-end="18796" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="2013-01-15-minimizing-code-in-crayon.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_posts/2013-01-15-minimizing-code-in-crayon.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="10" selection-start="91" selection-end="91" vertical-scroll-proportion="-3.75">
               <folding />
             </state>
           </provider>
@@ -158,10 +158,10 @@
         <option value="$PROJECT_DIR$/_posts/2013-05-28-welcome-to-jekyll.markdown" />
         <option value="$PROJECT_DIR$/projects/index.html" />
         <option value="$PROJECT_DIR$/projects/crayon.html" />
-        <option value="$PROJECT_DIR$/_layouts/bootstrap.html" />
         <option value="$PROJECT_DIR$/_layouts/post.html" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/css/main.css" />
+        <option value="$PROJECT_DIR$/_layouts/bootstrap.html" />
       </list>
     </option>
   </component>
@@ -535,20 +535,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2013-01-15-minimizing-code-in-crayon.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="10" selection-start="91" selection-end="91" vertical-scroll-proportion="-3.75">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_layouts/bootstrap.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="62" column="6" selection-start="2456" selection-end="2456" vertical-scroll-proportion="0.27663553">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_layouts/page.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="3" column="3" selection-start="29" selection-end="29" vertical-scroll-proportion="-1.875">
@@ -586,7 +572,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="96" column="19" selection-start="1310" selection-end="1310" vertical-scroll-proportion="0.6853147">
+        <state line="96" column="19" selection-start="1310" selection-end="1310" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_layouts/bootstrap.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="91" column="26" selection-start="3416" selection-end="3416" vertical-scroll-proportion="0.45183888">
           <folding />
         </state>
       </provider>

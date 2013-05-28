@@ -3,11 +3,11 @@
 <head>
     <meta charset="utf-8">
     <title>
-      {% if page.title %}
+        {% if page.title %}
         {{ page.title }} | Aram Kocharyan
-      {% else %}
+        {% else %}
         Aram Kocharyan
-      {% endif %}
+        {% endif %}
     </title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
@@ -71,7 +71,10 @@
 <footer class="footer">
     <div class="container">
         <p>Aram Kocharyan, <span class="date">{{ site.time | date: "%Y" }}</span>.</p>
-        <p>Built with <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> + <a href="http://twitter.github.io/bootstrap/" target="_blank">Bootstrap</a>. Hosted at <a href="http://pages.github.com/">GitHub Pages.</a></p>
+
+        <p>Built with <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> + <a
+                href="http://twitter.github.io/bootstrap/" target="_blank">Bootstrap</a>. Hosted at <a
+                href="http://pages.github.com/">GitHub Pages.</a></p>
     </div>
 </footer>
 
@@ -83,6 +86,23 @@
 
 <script src="/lib/holder.js"></script>
 <script src="/lib/google-code-prettify/prettify.js"></script>
+
+<script type="text/javascript">
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-38031779-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function () {
+        var ga = document.createElement('script');
+        ga.type = 'text/javascript';
+        ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(ga, s);
+    })();
+
+</script>
 
 </body>
 </html>
