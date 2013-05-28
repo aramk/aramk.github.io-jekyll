@@ -1,32 +1,75 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Using different versions of Fancybox on the same page</title>
-        <meta name="viewport" content="width=device-width">
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>
+        
+        Using different versions of Fancybox on the same page | Aram Kocharyan
+        
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-        <!-- syntax highlighting CSS -->
-        <link rel="stylesheet" href="/css/syntax.css">
+    <!-- Le styles -->
+    <link href="/lib/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="/lib/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="/lib/bootstrap/css/docs.css" rel="stylesheet">
+    <link href="/lib/google-code-prettify/prettify.css" rel="stylesheet">
+    <link href="/css/main.css" rel="stylesheet">
+    <link href="/css/syntax.css" rel="stylesheet">
 
-        <!-- Custom CSS -->
-        <link rel="stylesheet" href="/css/main.css">
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+    <script src="/lib/html5shiv.js"></script>
+    <![endif]-->
 
-    </head>
-    <body>
+    <!-- Le fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+    <link rel="shortcut icon" href="/assets/ico/favicon.png">
 
+</head>
+
+<body data-spy="scroll" data-target=".bs-docs-sidebar">
+<!-- Navbar
+    ================================================== -->
+<div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar-inner">
         <div class="container">
-          <div class="site">
-            <div class="header">
-              <h1 class="title"><a href="/">Aram Kocharyan</a></h1>
-              <a class="extra" href="/projects/crayon.html">crayon</a>
-            </div>
-     
-                <h2>Using different versions of Fancybox on the same page</h2>
-<p class="meta">28 Nov 2012</p>
+            <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="brand" href="/">Aram Kocharyan</a>
 
-<div id="post">
-I ran into the issue where some users had an older version of Fancybox on their sites and needed to provide my own version to work with <a href="http://wordpress.org/extend/plugins/crayon-syntax-highlighter/" target="_blank">Crayon</a>. So I put together <a href="https://github.com/aramkocharyan/fancyBox/blob/master/source/jquery.fancybox.init.pack.js" target="_blank">a modification of the original script</a> which allows you to initialise Fancybox when you need it and with different objects to what it's usually provided.
+            <div class="nav-collapse collapse">
+                <ul class="nav">
+                    <li class="">
+                        <a href="/projects">Projects</a>
+                    </li>
+                    <li class="">
+                        <a href="/projects/crayon.html">Crayon</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container main-container">
+    <article class="single">
+    <div class="meta">
+        <h1 class="title">Using different versions of Fancybox on the same page</h1>
+
+        <span class="date">28 Nov 2012</span>
+    </div>
+
+    <div id="post">
+        I ran into the issue where some users had an older version of Fancybox on their sites and needed to provide my own version to work with <a href="http://wordpress.org/extend/plugins/crayon-syntax-highlighter/" target="_blank">Crayon</a>. So I put together <a href="https://github.com/aramkocharyan/fancyBox/blob/master/source/jquery.fancybox.init.pack.js" target="_blank">a modification of the original script</a> which allows you to initialise Fancybox when you need it and with different objects to what it's usually provided.
 
 By default, Fancybox will apply these once the script is loaded: <code>(window, document, jQuery)</code>
 
@@ -66,19 +109,48 @@ See a <a href="http://jsfiddle.net/ZmmCp/" target="_blank">demo</a>, and <a href
 
 &nbsp;
 
+    </div>
+</article>
+
 </div>
 
+<!-- Footer
+================================================== -->
+<footer class="footer">
+    <div class="container">
+        <p>Aram Kocharyan, <span class="date">2013</span>.</p>
 
-            <div class="footer">
-              <div class="contact">
-                <p>
-                  <a href="http://github.com/aramkocharyan/">github.com/aramkocharyan</a><br />
-                  <a href="http://twitter.com/akarmenia/">twitter.com/akarmenia</a><br />
-                </p>
-              </div>
-            </div>
-          </div>
-        </div> <!-- /container -->
+        <p>Built with <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> + <a
+                href="http://twitter.github.io/bootstrap/" target="_blank">Bootstrap</a>. Hosted at <a
+                href="http://pages.github.com/">GitHub Pages.</a></p>
+    </div>
+</footer>
 
-    </body>
+<!-- Le javascript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="/lib/jquery.js"></script>
+<script src="/lib/bootstrap/js/bootstrap.min.js"></script>
+
+<script src="/lib/holder.js"></script>
+<script src="/lib/google-code-prettify/prettify.js"></script>
+
+<script type="text/javascript">
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-38031779-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function () {
+        var ga = document.createElement('script');
+        ga.type = 'text/javascript';
+        ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(ga, s);
+    })();
+
+</script>
+
+</body>
 </html>
