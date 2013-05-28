@@ -6,14 +6,15 @@ cd $DIR
 SELF=`basename $0`
 SOURCE_BRANCH="source"
 DEST_BRANCH="master"
+COPY_DIR="_copy_to_site"
 TMP_DIR="tmp"
 
 git checkout $SOURCE_BRANCH
 git commit -am "Source updates"
 jekyll build -d $TMP_DIR
+cp -r $COPY_DIR/* $TMP_DIR
 git checkout $DEST_BRANCH
-# This will remove previous files, which we may not want (e.g. CNAME)
-# git rm -qr .
+git rm -qr .
 cp -r $TMP_DIR/. .
 # Delete this script from the output
 rm ./$SELF
