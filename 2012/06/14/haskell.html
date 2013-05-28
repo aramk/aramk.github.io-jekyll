@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Haskell</title>
+        <meta name="viewport" content="width=device-width">
+
+        <!-- syntax highlighting CSS -->
+        <link rel="stylesheet" href="/css/syntax.css">
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="/css/main.css">
+
+    </head>
+    <body>
+
+        <div class="container">
+          <div class="site">
+            <div class="header">
+              <h1 class="title"><a href="/">Aram Kocharyan</a></h1>
+              <a class="extra" href="/">home</a>
+            </div>
+     
+                <h2>Haskell</h2>
+<p class="meta">14 Jun 2012</p>
+
+<div id="post">
+Just a note that Crayon 1.9.8 adds support for Haskell, and also TeX.
+<pre class="lang:haskell decode:true ">module Interpret(interpret) where
+
+import Prog
+
+import System.IO.Unsafe
+import Control.Monad
+import Char
+
+-- In a call to this function such as "interpret prog vars entry debug":
+-- prog is the ABCD program to be interpreted;
+-- vars represents the initial values of the four variables;
+-- entry is the name of the entry point function, "main" by default; and
+-- debug specifies whether the user wants debugging output.
+
+interpret :: Prog -&gt; Vars -&gt; String -&gt; MaybeDebug -&gt; IO ()
+interpret prog vars entry debug = do
+    let context = Context prog vars entry debug 0
+    let newContext = runFunc entry context
+    let output =
+        case newContext of
+            IError s -&gt; "abcdi: " ++ s
+            IOK c -&gt; (strVal (getVar A (cVars c))) ++ "\n"
+    putStrLn output</pre>
+&nbsp;
+
+</div>
+
+
+            <div class="footer">
+              <div class="contact">
+                <p>
+                  Your Name<br />
+                  What You Are<br />
+                  your@email.com
+                </p>
+              </div>
+              <div class="contact">
+                <p>
+                  <a href="http://github.com/aramkocharyan/">github.com/aramkocharyan</a><br />
+                  <a href="http://twitter.com/akarmenia/">twitter.com/akarmenia</a><br />
+                </p>
+              </div>
+            </div>
+          </div>
+        </div> <!-- /container -->
+
+    </body>
+</html>

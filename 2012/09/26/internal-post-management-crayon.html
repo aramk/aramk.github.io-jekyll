@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Internal Post Management in Crayon</title>
+        <meta name="viewport" content="width=device-width">
+
+        <!-- syntax highlighting CSS -->
+        <link rel="stylesheet" href="/css/syntax.css">
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="/css/main.css">
+
+    </head>
+    <body>
+
+        <div class="container">
+          <div class="site">
+            <div class="header">
+              <h1 class="title"><a href="/">Aram Kocharyan</a></h1>
+              <a class="extra" href="/">home</a>
+            </div>
+     
+                <h2>Internal Post Management in Crayon</h2>
+<p class="meta">26 Sep 2012</p>
+
+<div id="post">
+Crayon's internal post management determines when the rest of the system should kick in.
+
+When you save/edit a page, Crayon searches through the content and keeps a reference to the post in the database if it contains any Crayon tags. When you save/edit a comment, the same process takes place.
+
+When you load a page, Crayon goes through all the posts requested (for a single page, this is usually just a single post) and only checks those known to contain Crayon posts. For each of these, Crayon captures any tags used and keeps them in internal PHP memory.
+
+When the page or comment content is requested by Wordpress, Crayon steps in, highlights the code in the tags it captured earlier and replaces the original tags in the content.
+
+This means that <strong>only those pages that contain Crayons are ever checked for Crayons</strong>, meaning much more efficient than looking through every single post on the blog for Crayon tags!
+
+In Crayon 1.12, I've added a feature in the settings page to display all the posts that contain Crayon tags. It will also list all the posts which have Crayon tags in their comments, even if the post itself doesn't contain any. This is crucial to ensure Crayon kicks in and highlights the code in those comments.
+
+<a href="http://localsite.com/ak/wp-content/uploads/2012/09/Screen-Shot-2012-09-26-at-6.40.57-PM.png"><img class="aligncenter size-full wp-image-1022" title="Screen Shot 2012-09-26 at 6.40.57 PM" src="http://localsite.com/ak/wp-content/uploads/2012/09/Screen-Shot-2012-09-26-at-6.40.57-PM.png" alt="" width="307" height="49" /></a>
+
+<a href="http://localsite.com/ak/wp-content/uploads/2012/09/Screen-Shot-2012-09-26-at-6.41.03-PM.png"><img class="aligncenter size-full wp-image-1023" title="Screen Shot 2012-09-26 at 6.41.03 PM" src="http://localsite.com/ak/wp-content/uploads/2012/09/Screen-Shot-2012-09-26-at-6.41.03-PM.png" alt="" width="502" height="283" /></a>
+
+As an added safety measure, when you refresh the settings page, Crayon will manually go through all the posts in your site and update the list of those containing Crayons in the database. So if anything funky happens that somehow messes up this list, refreshing the settings page should sort it out.
+
+</div>
+
+
+            <div class="footer">
+              <div class="contact">
+                <p>
+                  Your Name<br />
+                  What You Are<br />
+                  your@email.com
+                </p>
+              </div>
+              <div class="contact">
+                <p>
+                  <a href="http://github.com/aramkocharyan/">github.com/aramkocharyan</a><br />
+                  <a href="http://twitter.com/akarmenia/">twitter.com/akarmenia</a><br />
+                </p>
+              </div>
+            </div>
+          </div>
+        </div> <!-- /container -->
+
+    </body>
+</html>

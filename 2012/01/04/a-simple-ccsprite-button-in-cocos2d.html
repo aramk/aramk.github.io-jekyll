@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>A Simple CCSprite Button In cocos2d</title>
+        <meta name="viewport" content="width=device-width">
+
+        <!-- syntax highlighting CSS -->
+        <link rel="stylesheet" href="/css/syntax.css">
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="/css/main.css">
+
+    </head>
+    <body>
+
+        <div class="container">
+          <div class="site">
+            <div class="header">
+              <h1 class="title"><a href="/">Aram Kocharyan</a></h1>
+              <a class="extra" href="/">home</a>
+            </div>
+     
+                <h2>A Simple CCSprite Button In cocos2d</h2>
+<p class="meta">04 Jan 2012</p>
+
+<div id="post">
+CCSprite's can implement the <code>&lt;CCTargetedTouchDelegate&gt;</code> protocol and implement the <code>ccTouchBegan:</code>, <code>ccTouchEnded:</code>, <code>ccTouchMoved:</code> and <code>ccTouchCancelled:</code> methods. I've built a class called <code>GTButton</code> that does this and allows you to specify two sprites to toggle between when the touch occurs. By default you must release your finger in the CCSprite to run a selector (a method on a target object), but you can change this with <code>mustRelease</code and <code>mustReleaseInside</code> boolean properties of the <code>GTButton</code> object. Here's the header file and the download link to the sample project. Remember to change the target SDK in the project settings to the latest one on your Xcode install - I used 5.0.
+
+<pre class="lang:objc " >
+#import "cocos2d.h"
+
+typedef enum buttonState {
+	FMButtonSelected, // Finger Down
+	FMButtonUnselected // Finger Up
+} FMButtonState;
+
+@interface GTButton : CCSprite <CCTargetedTouchDelegate> {
+	FMButtonState state;
+	CCSprite *spriteSelected, *spriteUnselected;
+	id target;
+	SEL selector;
+	/*
+	 mustRelease means you must lift your finger anywhere on screen to perform the selector.
+	 mustReleaseInside is subset of mustRelease and means you must lift your finger inside sprite.
+	 */
+	BOOL mustRelease, mustReleaseInside;
+}
+
+@property (assign,readwrite,nonatomic) id target;
+@property (assign,readwrite,nonatomic) SEL selector;
+@property (assign,readwrite,nonatomic) BOOL mustReleaseInside, mustRelease;
+
++(GTButton*) buttonWithUnselectedSprite:(CCSprite*)theSpriteUnselected SelectedSprite:(CCSprite*)theSpriteSelected Target:(id)theTarget Selector:(SEL)theSelector;
+-(id) initWithUnselectedSprite:(CCSprite*)theSpriteUnselected SelectedSprite:(CCSprite*)theSpriteSelected Target:(id)theTarget Selector:(SEL)theSelector;
+-(void) setTextureFromSprite:(CCSprite*)sprite;
+-(void) setSelected:(BOOL)selected;
+-(BOOL) containsTouchLocation:(UITouch *)touch;
+// Rect relative to the anchorPoint
+-(CGRect) relRect;
+
+@end
+</pre>
+
+<a href="http://www.mediafire.com/?ahbopc5c8hhaymd">Download Sample Project</a>
+
+</div>
+
+
+            <div class="footer">
+              <div class="contact">
+                <p>
+                  Your Name<br />
+                  What You Are<br />
+                  your@email.com
+                </p>
+              </div>
+              <div class="contact">
+                <p>
+                  <a href="http://github.com/aramkocharyan/">github.com/aramkocharyan</a><br />
+                  <a href="http://twitter.com/akarmenia/">twitter.com/akarmenia</a><br />
+                </p>
+              </div>
+            </div>
+          </div>
+        </div> <!-- /container -->
+
+    </body>
+</html>

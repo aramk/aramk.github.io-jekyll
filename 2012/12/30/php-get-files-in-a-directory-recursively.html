@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>PHP: Get Files in a Directory Recursively</title>
+        <meta name="viewport" content="width=device-width">
+
+        <!-- syntax highlighting CSS -->
+        <link rel="stylesheet" href="/css/syntax.css">
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="/css/main.css">
+
+    </head>
+    <body>
+
+        <div class="container">
+          <div class="site">
+            <div class="header">
+              <h1 class="title"><a href="/">Aram Kocharyan</a></h1>
+              <a class="extra" href="/">home</a>
+            </div>
+     
+                <h2>PHP: Get Files in a Directory Recursively</h2>
+<p class="meta">30 Dec 2012</p>
+
+<div id="post">
+This is a method that will return an array of file paths from a directory. It's contained within <a href="https://github.com/aramkocharyan/crayon-syntax-highlighter/blob/master/util/crayon_util.class.php" target="_blank">CrayonUtil</a> and calls other utility methods in that class, but can be ripped out if needed.
+<pre class="lang:php decode:true">/**
+ * @param $path A directory
+ * @param array $args Argument array:
+ *      hidden: If true, hidden files beginning with a dot will be included
+ *      ignoreRef: If true, . and .. are ignored
+ *      recursive: If true, this function is recursive
+ *      ignore: An array of paths to ignore
+ * @return array Files in the directory
+ */
+public static function getFiles($path, $args = array()) {
+    $hidden = self::set_default($args['hidden'], TRUE);
+    $ignoreRef = self::set_default($args['ignoreRef'], TRUE);
+    $recursive = self::set_default($args['recursive'], FALSE);
+    $ignore = self::set_default($args['ignore'], NULL);
+
+    $ignore_map = array();
+    if ($ignore) {
+        foreach ($ignore as $i) {
+            if (is_dir($i)) {
+                $i = CrayonUtil::path_slash($i);
+            }
+            $ignore_map[$i] = TRUE;
+        }
+    }
+
+    $files = glob($path . '*', GLOB_MARK);
+    if ($hidden) {
+        $files = array_merge($files, glob($path . '.*', GLOB_MARK));
+    }
+    if ($ignoreRef || $ignore) {
+        $result = array();
+        for ($i = 0; $i &lt; count($files); $i++) {
+            $file = $files[$i];
+            if (!isset($ignore_map[$file]) &amp;&amp; (!$ignoreRef || (basename($file) != '.' &amp;&amp; basename($file) != '..'))) {
+                $result[] = $file;
+                if ($recursive &amp;&amp; is_dir($file)) {
+                    $result = array_merge($result, self::getFiles($file, $args));
+                }
+            }
+        }
+    } else {
+        $result = $files;
+    }
+    return $result;
+}</pre>
+&nbsp;
+
+</div>
+
+
+            <div class="footer">
+              <div class="contact">
+                <p>
+                  Your Name<br />
+                  What You Are<br />
+                  your@email.com
+                </p>
+              </div>
+              <div class="contact">
+                <p>
+                  <a href="http://github.com/aramkocharyan/">github.com/aramkocharyan</a><br />
+                  <a href="http://twitter.com/akarmenia/">twitter.com/akarmenia</a><br />
+                </p>
+              </div>
+            </div>
+          </div>
+        </div> <!-- /container -->
+
+    </body>
+</html>

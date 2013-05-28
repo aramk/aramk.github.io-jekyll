@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Mixed Language Highlighting in Crayon</title>
+        <meta name="viewport" content="width=device-width">
+
+        <!-- syntax highlighting CSS -->
+        <link rel="stylesheet" href="/css/syntax.css">
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="/css/main.css">
+
+    </head>
+    <body>
+
+        <div class="container">
+          <div class="site">
+            <div class="header">
+              <h1 class="title"><a href="/">Aram Kocharyan</a></h1>
+              <a class="extra" href="/">home</a>
+            </div>
+     
+                <h2>Mixed Language Highlighting in Crayon</h2>
+<p class="meta">25 Dec 2011</p>
+
+<div id="post">
+As was promised, in Crayon 1.7.0 I have added the ability to highlight multiple languages at once in a single Crayon. This is useful when you're showing an HTML page with PHP with the <code>&lt;?php...?></code> delimiters, JavaScript with the <code>&lt;script></code> tag and CSS with the <code>&lt;style></code> tag. The delimiter regex is defined in <code>/langs/delimiters.txt</code> and there are two new settings added under "Code".
+
+<a href="http://localsite.com/ak/wp-content/uploads/2011/12/1.7.0-2.png"><img src="http://localsite.com/ak/wp-content/uploads/2011/12/1.7.0-2.png" alt="" title="" width="652" height="737" class="aligncenter size-full wp-image-689" /></a>
+
+You'll see a "+" sign by default when multiple languages are detected in your Crayon, and you can hide this if you like. Also, you can disable this mixed highlighting feature by using the attribute like so: <code>&lt;pre lang="html" mixed="false">&lt;/pre></code>. Oh, and you can also use <code>&lt;pre>&lt;/pre></code> tags instead of <code>$[crayon]</code> tags now :)
+
+So I hope that this nice addition proves useful, enjoy.
+
+</div>
+
+
+            <div class="footer">
+              <div class="contact">
+                <p>
+                  Your Name<br />
+                  What You Are<br />
+                  your@email.com
+                </p>
+              </div>
+              <div class="contact">
+                <p>
+                  <a href="http://github.com/aramkocharyan/">github.com/aramkocharyan</a><br />
+                  <a href="http://twitter.com/akarmenia/">twitter.com/akarmenia</a><br />
+                </p>
+              </div>
+            </div>
+          </div>
+        </div> <!-- /container -->
+
+    </body>
+</html>

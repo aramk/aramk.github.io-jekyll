@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Detect Mac or PC in PHP</title>
+        <meta name="viewport" content="width=device-width">
+
+        <!-- syntax highlighting CSS -->
+        <link rel="stylesheet" href="/css/syntax.css">
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="/css/main.css">
+
+    </head>
+    <body>
+
+        <div class="container">
+          <div class="site">
+            <div class="header">
+              <h1 class="title"><a href="/">Aram Kocharyan</a></h1>
+              <a class="extra" href="/">home</a>
+            </div>
+     
+                <h2>Detect Mac or PC in PHP</h2>
+<p class="meta">23 Oct 2011</p>
+
+<div id="post">
+Use this script to find if the user is on a Mac or a PC. Returns TRUE when on a Mac. $default is optional. If the script can't determine either a Mac or a PC, it will return this.
+
+<pre class="lang:php " >
+<?php
+
+function user_is_mac($default = FALSE) {
+	$user = $_SERVER['HTTP_USER_AGENT'];
+	if (stripos($user, 'macintosh')) {
+		return TRUE;
+	} else if (stripos($user, 'windows') || stripos($user, 'linux')) {
+		return FALSE;
+	} else {
+		return $default===TRUE;
+	}
+}
+
+var_dump(is_mac());
+
+?>
+</pre>
+
+</div>
+
+
+            <div class="footer">
+              <div class="contact">
+                <p>
+                  Your Name<br />
+                  What You Are<br />
+                  your@email.com
+                </p>
+              </div>
+              <div class="contact">
+                <p>
+                  <a href="http://github.com/aramkocharyan/">github.com/aramkocharyan</a><br />
+                  <a href="http://twitter.com/akarmenia/">twitter.com/akarmenia</a><br />
+                </p>
+              </div>
+            </div>
+          </div>
+        </div> <!-- /container -->
+
+    </body>
+</html>

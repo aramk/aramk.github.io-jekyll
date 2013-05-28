@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Generic Stack for Objective-C</title>
+        <meta name="viewport" content="width=device-width">
+
+        <!-- syntax highlighting CSS -->
+        <link rel="stylesheet" href="/css/syntax.css">
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="/css/main.css">
+
+    </head>
+    <body>
+
+        <div class="container">
+          <div class="site">
+            <div class="header">
+              <h1 class="title"><a href="/">Aram Kocharyan</a></h1>
+              <a class="extra" href="/">home</a>
+            </div>
+     
+                <h2>Generic Stack for Objective-C</h2>
+<p class="meta">23 Jan 2012</p>
+
+<div id="post">
+Here's a simple stack to store any ol' object in Objective-C.
+
+<pre class="lang:objc title:FMStack.h " >
+//
+//	Generic Stack v1.0
+//  By Aram Kocharyan. http://localsite.com/ak/
+//
+
+#import <Foundation/Foundation.h>
+
+static const int kFMStackDefaultCapacity = 10;
+
+@interface FMStack : NSObject {
+	NSMutableArray *stack;
+}
+
++ (id)stack;
++ (id)stackWithCapacity:(int)capacity;
+- (id)initWithCapacity:(int)capacity;
+
+- (void)push:(id)object;
+- (id)pop;
+- (void)clear;
+- (int)count;
+
+@end
+</pre>
+
+<pre class="lang:objc title:FMStack.m " >
+//
+//	Generic Stack v1.0
+//  By Aram Kocharyan. http://localsite.com/ak/
+//
+
+#import "FMStack.h"
+
+@implementation FMStack
+
++ (id)stack {
+	return [[[self alloc] init] autorelease];
+}
+
++ (id)stackWithCapacity:(int)capacity {
+	return [[[self alloc] initWithCapacity:capacity] autorelease];
+}
+
+- (id)init {
+    return [self initWithCapacity:kFMStackDefaultCapacity];
+}
+
+- (id)initWithCapacity:(int)capacity {
+	self = [super init];
+    if (self) {
+		stack = [[NSMutableArray alloc] initWithCapacity:capacity];
+	}
+	return self;
+}
+
+- (void)push:(id)object {
+	[stack addObject:object];
+}
+
+- (id)pop {
+	id object = [stack lastObject];
+	NSAssert(object != nil, @"Nothing to pop from stack");
+	[stack removeObject:object];
+	return object;
+}
+
+- (void)clear {
+	[stack removeAllObjects];
+}
+
+- (int)count {
+	return [stack count];
+}
+
+@end
+</pre>
+
+</div>
+
+
+            <div class="footer">
+              <div class="contact">
+                <p>
+                  Your Name<br />
+                  What You Are<br />
+                  your@email.com
+                </p>
+              </div>
+              <div class="contact">
+                <p>
+                  <a href="http://github.com/aramkocharyan/">github.com/aramkocharyan</a><br />
+                  <a href="http://twitter.com/akarmenia/">twitter.com/akarmenia</a><br />
+                </p>
+              </div>
+            </div>
+          </div>
+        </div> <!-- /container -->
+
+    </body>
+</html>

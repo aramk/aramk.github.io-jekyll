@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>PHP: array_flip() with Values Containing Arrays</title>
+        <meta name="viewport" content="width=device-width">
+
+        <!-- syntax highlighting CSS -->
+        <link rel="stylesheet" href="/css/syntax.css">
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="/css/main.css">
+
+    </head>
+    <body>
+
+        <div class="container">
+          <div class="site">
+            <div class="header">
+              <h1 class="title"><a href="/">Aram Kocharyan</a></h1>
+              <a class="extra" href="/">home</a>
+            </div>
+     
+                <h2>PHP: array_flip() with Values Containing Arrays</h2>
+<p class="meta">27 Dec 2012</p>
+
+<div id="post">
+I had the following:
+<pre class="lang:php decode:true">$attributeTypes = array(
+    'color' =&gt; array('background', 'border-color'),
+    'size' =&gt; array('border-width')
+);
+$attributeTypesInverse = array_flip($attributeTypes);</pre>
+But I got this warning: Warning: array_flip() [function.array-flip]: Can only flip STRING and INTEGER values!
+
+So I wrote a new function to support arrays as values, not just integers or strings. Keep in mind though that the values of the arrays in values must be integers or strings in order to be valid keys for the resulting array.
+<pre class="lang:php decode:true">function array_flip_r($array) {
+    $result = array();
+    foreach ($array as $k=&gt;$v) {
+        if (is_array($v)) {
+            foreach ($v as $u) {
+                _array_flip_r($result, $k, $u);
+            }
+        } else {
+            _array_flip_r($result, $k, $v);
+        }
+    }
+    return $result;
+}
+
+function _array_flip_r(&amp;$array, $k, $v) {
+    if (is_string($v) || is_int($v)) {
+        $array[$v] = $k;
+    } else {
+        trigger_error("Values must be STRING or INTEGER", E_USER_WARNING);
+    }
+}</pre>
+&nbsp;
+
+</div>
+
+
+            <div class="footer">
+              <div class="contact">
+                <p>
+                  Your Name<br />
+                  What You Are<br />
+                  your@email.com
+                </p>
+              </div>
+              <div class="contact">
+                <p>
+                  <a href="http://github.com/aramkocharyan/">github.com/aramkocharyan</a><br />
+                  <a href="http://twitter.com/akarmenia/">twitter.com/akarmenia</a><br />
+                </p>
+              </div>
+            </div>
+          </div>
+        </div> <!-- /container -->
+
+    </body>
+</html>

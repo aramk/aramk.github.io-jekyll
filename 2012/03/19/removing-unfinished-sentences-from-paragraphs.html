@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Removing Unfinished Sentences From Paragraphs</title>
+        <meta name="viewport" content="width=device-width">
+
+        <!-- syntax highlighting CSS -->
+        <link rel="stylesheet" href="/css/syntax.css">
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="/css/main.css">
+
+    </head>
+    <body>
+
+        <div class="container">
+          <div class="site">
+            <div class="header">
+              <h1 class="title"><a href="/">Aram Kocharyan</a></h1>
+              <a class="extra" href="/">home</a>
+            </div>
+     
+                <h2>Removing Unfinished Sentences From Paragraphs</h2>
+<p class="meta">19 Mar 2012</p>
+
+<div id="post">
+These are helpful after you strip a paragraph for a word limit and want to cut off the last incomplete sentence.
+
+<pre class="lang:php " >
+// Remove the last unfinished sentence in a paragraph if it contains $min_word_count or less words
+function remove_unfinished_sentence($paragraph, $min_word_count = 3, $replace = '.') {
+	$min_word_count = $min_word_count > 1 ? $min_word_count : 1;
+	return preg_replace('#(.s*([^s.]+s+){0,'.($min_word_count-1).'}([^s.]+s*))$#ms', $replace, $paragraph);
+}
+</pre>
+
+Of course, if you want to completely remove the last sentence, this will suffice:
+
+<pre class="lang:php " >
+// Remove the last sentence in a paragraph
+function remove_last_sentence($paragraph, $replace = '.') {
+	return preg_replace('#.s*[^.]+$#ms', $replace, $paragraph);
+}
+// Output: This is some stuff.
+remove_last_sentence('This is some stuff. Blah Blah ');
+</pre>
+
+</div>
+
+
+            <div class="footer">
+              <div class="contact">
+                <p>
+                  Your Name<br />
+                  What You Are<br />
+                  your@email.com
+                </p>
+              </div>
+              <div class="contact">
+                <p>
+                  <a href="http://github.com/aramkocharyan/">github.com/aramkocharyan</a><br />
+                  <a href="http://twitter.com/akarmenia/">twitter.com/akarmenia</a><br />
+                </p>
+              </div>
+            </div>
+          </div>
+        </div> <!-- /container -->
+
+    </body>
+</html>

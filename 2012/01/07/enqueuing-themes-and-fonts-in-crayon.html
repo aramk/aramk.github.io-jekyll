@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Enqueuing Themes and Fonts in Crayon</title>
+        <meta name="viewport" content="width=device-width">
+
+        <!-- syntax highlighting CSS -->
+        <link rel="stylesheet" href="/css/syntax.css">
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="/css/main.css">
+
+    </head>
+    <body>
+
+        <div class="container">
+          <div class="site">
+            <div class="header">
+              <h1 class="title"><a href="/">Aram Kocharyan</a></h1>
+              <a class="extra" href="/">home</a>
+            </div>
+     
+                <h2>Enqueuing Themes and Fonts in Crayon</h2>
+<p class="meta">07 Jan 2012</p>
+
+<div id="post">
+I've recently been notified of an issue <a href="http://wordpress.org/support/topic/plugin-crayon-syntax-highlighter-style-and-js-dont-work">here</a> once again to do with enqueuing CSS. So I decided to take another look and I believe I've improved the Crayon capturing and enqueuing process by cleaning it up a bit. Now you'll see two new options in settings under <code>Themes</code> and <code>Fonts</code>.
+
+<a href="http://localsite.com/ak/wp-content/uploads/2012/01/Screen-Shot-2012-01-07-at-5.48.11-PM.png"><img src="http://localsite.com/ak/wp-content/uploads/2012/01/Screen-Shot-2012-01-07-at-5.48.11-PM.png" alt="" title="" width="677" height="271" class="aligncenter size-full wp-image-739" /></a>
+
+To efficiently enqueue the CSS for themes and fonts in the html header tag the proper way (default) leave these checkboxes ticked. If you're having issues for some reason with enqueuing not working, you can go for the legacy method and uncheck these boxes. The CSS will then be printed out before each Crayon. Note this will happen each time they are needed, not only once at the top like enqueueing. This is to ensure that the themes and fonts load wherever they appear. It's better to leave enqueuing on if all works well.
+
+</div>
+
+
+            <div class="footer">
+              <div class="contact">
+                <p>
+                  Your Name<br />
+                  What You Are<br />
+                  your@email.com
+                </p>
+              </div>
+              <div class="contact">
+                <p>
+                  <a href="http://github.com/aramkocharyan/">github.com/aramkocharyan</a><br />
+                  <a href="http://twitter.com/akarmenia/">twitter.com/akarmenia</a><br />
+                </p>
+              </div>
+            </div>
+          </div>
+        </div> <!-- /container -->
+
+    </body>
+</html>

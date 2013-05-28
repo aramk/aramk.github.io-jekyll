@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Drawing touch points with cocos2d</title>
+        <meta name="viewport" content="width=device-width">
+
+        <!-- syntax highlighting CSS -->
+        <link rel="stylesheet" href="/css/syntax.css">
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="/css/main.css">
+
+    </head>
+    <body>
+
+        <div class="container">
+          <div class="site">
+            <div class="header">
+              <h1 class="title"><a href="/">Aram Kocharyan</a></h1>
+              <a class="extra" href="/">home</a>
+            </div>
+     
+                <h2>Drawing touch points with cocos2d</h2>
+<p class="meta">18 Sep 2011</p>
+
+<div id="post">
+I've been experimenting with cocos2d for iOS development and made a very simple program that grabs the touch locations on the screen and draws the points. It uses a C++ vector to store the CGPoint primitives and the draw: message takes care of drawing them, whenever we fill the vector with points.
+
+<img src="http://localsite.com/ak/wp-content/uploads/2011/09/Screen-Shot-2011-09-18-at-2.16.31-AM.png" /><br/>
+
+Here's the draw:
+
+<pre class="lang:objc " >
+static std::vector<CGPoint>points;
+...
+
+-(void) draw {
+...
+	// Draw points
+	glPointSize(4);
+	for (int i = 0; i < points.size(); i++) {
+		glColor4ub(0,255,0,255); // Green
+		CGPoint p = points.at(i);
+		ccDrawPoint(p);
+		
+		glColor4ub(255,255,255,255); // White
+		CGPoint *vertices = &points[0]; // Vector to array
+		ccDrawPoly(vertices, points.size(), NO);
+	}
+...
+}
+</pre>
+
+And here's how the points are captured:
+
+<pre class="lang:objc " >
+- (void)ccTouchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
+    UITouch *myTouch = [touches anyObject];
+    CGPoint location = [myTouch locationInView:[myTouch view]];
+    location = [[CCDirector sharedDirector] convertToGL:location];
+    b2Vec2 locationWorld = b2Vec2(location.x/PTM_RATIO, location.y/PTM_RATIO);
+	
+	NSLog(@"TOUCH BEGIN %f %f", location.x, location.y);
+	
+	points.clear();
+	points.push_back(location);
+}
+
+-(void)ccTouchesMoved:(NSSet *)touches withEvent:(UIEvent *)event {
+    UITouch *myTouch = [touches anyObject];
+    CGPoint location = [myTouch locationInView:[myTouch view]];
+    location = [[CCDirector sharedDirector] convertToGL:location];
+    b2Vec2 locationWorld = b2Vec2(location.x/PTM_RATIO, location.y/PTM_RATIO);
+    
+	points.push_back(location);
+}
+
+-(void)ccTouchesCancelled:(NSSet *)touches withEvent:(UIEvent *)event {
+    points.clear();
+}
+
+- (void)ccTouchesEnded:(NSSet *)touches withEvent:(UIEvent *)event {
+	UITouch *myTouch = [touches anyObject];
+    CGPoint location = [myTouch locationInView:[myTouch view]];
+    location = [[CCDirector sharedDirector] convertToGL:location];
+    b2Vec2 locationWorld = b2Vec2(location.x/PTM_RATIO, location.y/PTM_RATIO);
+	
+    NSLog(@"TOUCH END %f %f", location.x, location.y);
+	
+	for (int i = 0; i < points.size(); i++) {
+		CGPoint p = points.at(i);
+		NSLog(@" TOUCH @ %f %f", p.x, p.y);
+	}
+}
+</pre>
+
+<a href="https://github.com/aramkocharyan/cocos2d-Sandbox/tree/master/DrawTest" target="_blank">Download Xcode Project</a>
+
+</div>
+
+
+            <div class="footer">
+              <div class="contact">
+                <p>
+                  Your Name<br />
+                  What You Are<br />
+                  your@email.com
+                </p>
+              </div>
+              <div class="contact">
+                <p>
+                  <a href="http://github.com/aramkocharyan/">github.com/aramkocharyan</a><br />
+                  <a href="http://twitter.com/akarmenia/">twitter.com/akarmenia</a><br />
+                </p>
+              </div>
+            </div>
+          </div>
+        </div> <!-- /container -->
+
+    </body>
+</html>

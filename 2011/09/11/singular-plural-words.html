@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Singular and Plural Numbered Words</title>
+        <meta name="viewport" content="width=device-width">
+
+        <!-- syntax highlighting CSS -->
+        <link rel="stylesheet" href="/css/syntax.css">
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="/css/main.css">
+
+    </head>
+    <body>
+
+        <div class="container">
+          <div class="site">
+            <div class="header">
+              <h1 class="title"><a href="/">Aram Kocharyan</a></h1>
+              <a class="extra" href="/">home</a>
+            </div>
+     
+                <h2>Singular and Plural Numbered Words</h2>
+<p class="meta">11 Sep 2011</p>
+
+<div id="post">
+Use this to get something like: "5 bananas", "1 turtle".
+
+E.g. spnum(5, 'banana');
+
+<pre class="" >
+// Support for singular and plural string variations
+function spnum($int, $singular, $plural = NULL) {
+	if (!is_int($int) || !is_string($singular)) {
+		$int = intval($int);
+		$singular = strval($singular);
+	}
+	if ($plural == NULL || !is_string($plural)) {
+		$plural = $singular . 's';
+	}
+	return $int . ' ' . (($int == 1) ? $singular : $plural);
+}
+</pre>
+
+</div>
+
+
+            <div class="footer">
+              <div class="contact">
+                <p>
+                  Your Name<br />
+                  What You Are<br />
+                  your@email.com
+                </p>
+              </div>
+              <div class="contact">
+                <p>
+                  <a href="http://github.com/aramkocharyan/">github.com/aramkocharyan</a><br />
+                  <a href="http://twitter.com/akarmenia/">twitter.com/akarmenia</a><br />
+                </p>
+              </div>
+            </div>
+          </div>
+        </div> <!-- /container -->
+
+    </body>
+</html>

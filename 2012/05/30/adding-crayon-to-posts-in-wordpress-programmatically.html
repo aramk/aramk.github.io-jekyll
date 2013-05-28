@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Adding Crayon To Posts In Wordpress Programmatically</title>
+        <meta name="viewport" content="width=device-width">
+
+        <!-- syntax highlighting CSS -->
+        <link rel="stylesheet" href="/css/syntax.css">
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="/css/main.css">
+
+    </head>
+    <body>
+
+        <div class="container">
+          <div class="site">
+            <div class="header">
+              <h1 class="title"><a href="/">Aram Kocharyan</a></h1>
+              <a class="extra" href="/">home</a>
+            </div>
+     
+                <h2>Adding Crayon To Posts In Wordpress Programmatically</h2>
+<p class="meta">30 May 2012</p>
+
+<div id="post">
+I've just added a PHP function called `CrayonWP::highlight()` that you provide with string containing Crayons like they appear in the post editor that produces Crayons as you see them on screen. This will let you arbitrarily create Crayons anywhere in your code given some code and then add them to the post content or wherever you like. Just add this to your theme's `functions.php` or  somewhere within your theme.
+<pre class="lang:php decode:true">add_filter('the_content', 'add_crayons_to_content');
+
+function add_crayons_to_content($content) {
+	global $post;
+	$id = $post-&gt;ID;
+	// Generate some code based on post ID etc
+	$some_code = "&lt;strong&gt;hello world&lt;/strong&gt;";
+	$crayon = '&lt;pre class="lang:html toolbar:always mark:1"&gt;' . $some_code . '&lt;/pre&gt;';
+	// Add Crayon to content
+	return $content . CrayonWP::highlight($crayon);
+}</pre>
+This is a simple example that appends some code in a Crayon to the end of every post - you probably don't want it to look the same, so you can provide something dynamic using the post ID instead. This only works in Wordpress - there's a different method that allows more configuration for <a title="Using Crayon Manually in PHP" href="http://localsite.com/ak/crayon/using-crayon-manually-in-php/">using Crayon in other PHP environments</a>.
+
+&nbsp;
+
+</div>
+
+
+            <div class="footer">
+              <div class="contact">
+                <p>
+                  Your Name<br />
+                  What You Are<br />
+                  your@email.com
+                </p>
+              </div>
+              <div class="contact">
+                <p>
+                  <a href="http://github.com/aramkocharyan/">github.com/aramkocharyan</a><br />
+                  <a href="http://twitter.com/akarmenia/">twitter.com/akarmenia</a><br />
+                </p>
+              </div>
+            </div>
+          </div>
+        </div> <!-- /container -->
+
+    </body>
+</html>

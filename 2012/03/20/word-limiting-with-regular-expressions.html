@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Word Limiting With Regular Expressions</title>
+        <meta name="viewport" content="width=device-width">
+
+        <!-- syntax highlighting CSS -->
+        <link rel="stylesheet" href="/css/syntax.css">
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="/css/main.css">
+
+    </head>
+    <body>
+
+        <div class="container">
+          <div class="site">
+            <div class="header">
+              <h1 class="title"><a href="/">Aram Kocharyan</a></h1>
+              <a class="extra" href="/">home</a>
+            </div>
+     
+                <h2>Word Limiting With Regular Expressions</h2>
+<p class="meta">20 Mar 2012</p>
+
+<div id="post">
+Here's my take on limiting words in a paragraph.
+
+<code>^s*((?:S+s*){0,20})(.*)</code>
+
+That'll capture the first 20 words and also the rest of the string. Then, you can replace the entire capture with the first capture group (the first 20 words). In PHP:
+
+<pre class="lang:php " >
+function ak_limit_words($str, $word_limit) {
+	return preg_replace('#^s*((?:S+s*){0,'.$word_limit.'})(.*)#msi', '$1', $str);
+}
+
+// Output: 'this is the '
+ak_limit_words('this is the sentence...', 3);
+</pre>
+
+</div>
+
+
+            <div class="footer">
+              <div class="contact">
+                <p>
+                  Your Name<br />
+                  What You Are<br />
+                  your@email.com
+                </p>
+              </div>
+              <div class="contact">
+                <p>
+                  <a href="http://github.com/aramkocharyan/">github.com/aramkocharyan</a><br />
+                  <a href="http://twitter.com/akarmenia/">twitter.com/akarmenia</a><br />
+                </p>
+              </div>
+            </div>
+          </div>
+        </div> <!-- /container -->
+
+    </body>
+</html>
